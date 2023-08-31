@@ -2,14 +2,63 @@ nav{
 	font-family: 'Open Sans',Arial,sans-serif;
 	font-weight: 700;
 }
-#botao{
+p {
+	font-family: 'Lato',Helvetica, Arial, Lucida, sans-serif;
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	width: 87%;
+	line-height: 190%;
+}
+h2 {
+	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 58px;
+	font-weight: 700;
+}
+h4 {
+	font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+}
+#tecla{
 	color: #ffffff;
 	line-height: 30px;
 	border-radius: 50px;
 }
 #sobre {
-	margin: 5px 0px 0px 85px;
-	padding: 108px 0px 0px 108px;
+	margin-left: 85px;
+	padding: 130px 0px 130px 105px;
+}
+#terapias h2 {
+    font-size: 40px;
+	margin-bottom: 50px;
+}
+.image-container {
+	position: relative;
+}
+
+.overlay-image {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 75%;
+	height: 60%;
+	object-fit: cover;
+	z-index: 1;
+	transform: translateY(-50%);
+}
+.background-image {
+	width: 90%;
+	height: 72%;
+	object-fit: cover;
+	transform: translateX(+10%);
+}
+.col-md-4 h2:first-child{
+	padding-bottom: 20px;
+	font-size: 40px;
+}
+.col-md-4 p{
+	font-size: 15px;
 }
 .botao{
 	font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
@@ -29,32 +78,13 @@ nav{
 .banner .caption {
 	background-color: transparent;
 	color: #4f4f4f;
-	padding: 100px 100px 0px 108px;
+	padding: 210px 100px 0px 108px;
 	max-width: 55%;
-}
-.banner .caption h2 {
-	margin-bottom: 15px;
-	font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
-	font-size: 58px;
-	font-weight: 700;
-}
-.banner h4 {
-	margin-bottom: 5px;
-	font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-	font-size: 20px;
-	line-height: 30px;
 }
 .banner .caption .line-dec {
 	width: 30px;
 	height: 5px;
 	background-color: #fc9cd7;
-}
-.banner .caption p {
-	font-family: 'Lato',Helvetica, Arial, Lucida, sans-serif;
-	font-size: 18px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	width: 87%;
 }
 .alig-end {
 	display: flex;
