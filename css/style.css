@@ -26,6 +26,12 @@ h4 {
 	line-height: 30px;
 	border-radius: 50px;
 }
+#tecla2{
+	width: 100%;
+	color: #ffffff;
+	line-height: 30px;
+	border-radius: 50px;
+}
 #sobre {
 	margin-left: 85px;
 	padding: 130px 0px 130px 105px;
@@ -79,7 +85,7 @@ h4 {
 	margin-top: 70px;
 }
 .banner {
-	background-image: url(../assets/banner3.jpg);
+	background-image: url(../assets/banner3.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 67px 0px;
@@ -102,4 +108,8 @@ h4 {
 }
 .card-group .card {
 	border: none;
+}
+.map {
+	width: 100%; 
+	height: 100%;
 }
