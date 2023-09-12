@@ -1,4 +1,39 @@
+h1 {
+    font-family: 'Lato',Helvetica, Arial, Lucida, sans-serif;
+	font-weight: 700;
+}
 .formulario{
-    max-width: 55%;
+    max-width: 100%;
     padding-top: 70px;
 }
+
+.banner {
+	background-image: url(../assets/banner3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 67px 0px;
+	background-position: center center;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.map {
+	width: 100%; 
+	height: 100%;
+}
+
+#contato {
+    margin-top: 50px;
+}
+#agendamentoForm {
+    line-height: 30px;
+}
+
+#caption {
+    max-width: 75%;
+    background: rgba(243, 230, 255, 0.3);
+    border-radius: 20px;
+}
+

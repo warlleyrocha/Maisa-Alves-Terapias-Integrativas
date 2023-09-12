@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento - Maisa Alves Terapias Holísticas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style-from.css">
@@ -13,66 +16,99 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                        <div class="container">
+                    <nav class="navbar bg-body-tertiary fixed-top">
+                        <div class="container-fluid">
                             <a class="navbar-brand" href="#">
-                                <img src="./assets/logo.jpg" alt="Logo" width="50" height="70">
+                                <img src="./assets/logo.jpg" alt="logo" height="50" width="50">
                             </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#sobre">Sobre</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#terapias">Terapias</a>
-                                    </li>
-                                </ul>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Maisa Alves</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Shop(coming soon)</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
-        </div>
+        </div> 
     </header>
     
     <section class="formulario">
-        <div class="container mt-5 formulario">
-            <h1>Agendamento</h1>
-            <form id="agendamentoForm">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" class="form-control" id="nome" required>
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="container mt-5" id="caption">
+                        
+                        <h1>Agendamento</h1>
+                        
+                        <form id="agendamentoForm">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="data">Data:</label>
+                                <input type="date" class="form-control" id="data" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="local">Local:</label>
+                                <select class="form-select form-group" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">Santa Maria de Jetibá</option>
+                                    <option value="2">Santa Teresa</option>
+                                    <option value="3">Itarana</option>
+                                </select>
+                            </div>   
+                            
+                            <div class="form-group">
+                                <label for="horario">Horário:</label>
+                                <input type="time" class="form-control" id="horario" required>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary button">Agendar</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="data">Data:</label>
-                    <input type="date" class="form-control" id="data" required>
-                </div>
-                <div class="form-group">
-                    <label for="local">Local:</label>
-                    <select class="form-select form-group" aria-label="Default select example">
-                        <option selected></option>
-                        <option value="1">Santa Maria de Jetibá</option>
-                        <option value="2">Santa Teresa</option>
-                        <option value="3">Itarana</option>
-                    </select>
-                </div>           
-                <div class="form-group">
-                    <label for="horario">Horário:</label>
-                    <input type="time" class="form-control" id="horario" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Agendar</button>
-            </form>
-        </div>
+            </div>
+        </div> 
     </section>
     
     <section id="contato">
@@ -111,32 +147,30 @@
                         </div>
                     </div>  
                 </div>
+                
+                <div class="col-md-6 col-sm-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m11!1m3!1d126.8637920945285!2d-40.74396299854331!3d-20.026504646584456!2m2!1f27.375155178030983!2f45!3m2!1i1024!2i768!4f35!3m2!1m1!2zMjDCsDAxJzQxLjMiUyA0MMKwNDQnMzEuMiJX!5e1!3m2!1spt-BR!2sbr!4v1694024336058!5m2!1spt-BR!2sbr"  title="map" class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
         
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                    <a href="./assets/logo.jpg" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <a href="./assets/logo.jpg" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1" title="icon">
                         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
                     </a>
                     <span class="mb-3 mb-md-0 text-muted">&copy; 2023 Maisa, Alves</span>
                 </div>
                 
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <a
-                    class="btn btn-link btn-floating btn-lg text-dark m-1"
-                    href="https://www.instagram.com/terapeutaintegrativamaisa/"
-                    role="button"
-                    data-mdb-ripple-color="dark"
-                    ><i class="fa fa-instagram fa-xl"></i
-                        ></a>
-                    </ul>
-                </footer>
-            </div>
-        </section>
-
-        <script src="./js/script.js"></script>
-    </body>
-    </html>
+                <span class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" title="icon" href="https://www.instagram.com/terapeutaintegrativamaisa/" target="_blank" rel="noopener" role="button" data-mdb-ripple-color="dark"><i class="fa fa-instagram fa-xl"></i></a>
+                </span>
+            </footer>
+        </div>
+    </section>
     
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a5f03e2ede.js" crossorigin="anonymous"></script>
+</body>
+</html>
