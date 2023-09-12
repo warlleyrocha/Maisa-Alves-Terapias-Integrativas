@@ -33,8 +33,7 @@ h4 {
 	border-radius: 50px;
 }
 #sobre {
-	margin-left: 85px;
-	padding: 130px 0px 130px 105px;
+	padding: 130px 0px 130px 65px;
 }
 #terapias {
 	padding-bottom: 100px;
@@ -45,6 +44,12 @@ h4 {
 }
 #borda {
 	padding-top: 35px;
+}
+#navbarLeft {
+	margin-left: 20px;
+}
+.iconeMeio {
+	padding: 20px;
 }
 .icone{
 	display: flex;
@@ -94,7 +99,7 @@ h4 {
 .banner .caption {
 	background-color: transparent;
 	color: #4f4f4f;
-	padding: 210px 100px 0px 108px;
+	padding: 100px 100px 0px 100px;
 	max-width: 55%;
 }
 .banner .caption .line-dec {
